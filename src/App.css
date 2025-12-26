@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+:root {
+  --primary: #3b82f6;
+  /* Professional Azure Blue */
+  --secondary: #94a3b8;
+  /* Slate/Silver */
+  --bg: #0f172a;
+  /* Dark Slate Background */
+  --card-bg: #1e293b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  /* Vibrant Changing Background */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  width: 100%;
+  max-width: 1400px;
+  /* Limit width */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Center slider vertically */
+  align-items: center;
+  /* Center slider horizontally */
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  pointer-events: auto;
+}
+
+.slider-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0;
+  /* Remove auto margin as flex parent handles it */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* Add some breathing room */
+  box-sizing: border-box;
+}
+
+.footer {
+  margin-top: auto;
+  color: #777;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  position: relative;
+  pointer-events: auto;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
