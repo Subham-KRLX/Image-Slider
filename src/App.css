@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap');
 
-:root {
-  --primary: #3b82f6;
-  /* Professional Azure Blue */
-  --secondary: #94a3b8;
-  /* Slate/Silver */
-  --bg: #0f172a;
-  /* Dark Slate Background */
-  --card-bg: #1e293b;
-}
+@import './variables.css';
 
 body {
   margin: 0;
