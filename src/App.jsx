@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import ImageSlider from './Components/ImageSlider/ImageSlider'
 import Header from './Components/Header'
+import Footer from './Components/Footer'
 
 function App() {
   const slides = [
@@ -40,9 +41,7 @@ function App() {
         <ImageSlider slides={slides} />
       </div>
 
-      <div className="footer">
-        <p>SECURE TERMINAL // V.2.0.24</p>
-      </div>
+      <Footer />
     </div>
   )
 }
