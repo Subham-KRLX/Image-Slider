@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import ImageSlider from './Components/ImageSlider/ImageSlider'
+import Header from './Components/Header'
 
 function App() {
   const slides = [
@@ -33,9 +34,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="header">
-        {/* Project name removed as requested */}
-      </div>
+      <Header />
 
       <div className="slider-wrapper">
         <ImageSlider slides={slides} />
